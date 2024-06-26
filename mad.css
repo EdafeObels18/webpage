@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a7e0eb;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-box,
+.form-box {
+    padding: 30px;
+    width: 50%;
+}
+
+.info-box {
+    background-color: #307dc5;
+    color: #fff;
+}
+
+.info-box h2 {
+    margin-top: 0;
+}
+
+.info-box button {
+    background-color: #ccc;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.form-box {
+    background-color: #fff;
+}
+
+.form-box h2 {
+    margin-top: 0;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    width: 90%;
+    text-align: left;
+}
+.input {
+    width: 90%;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* .input-box input {
+    width: 90%;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+} */
+
+.checkbox-box {
+    margin-bottom: 15px;
+}
+
+.checkbox-box label {
+    margin-left: 5px;
+}
+
+.checkbox-box a {
+    color: #307dc5;
+    text-decoration: none;
+}
+
+.button-box {
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #307dc5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 35%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-box,
+    .form-box {
+        width: 100%;
+    }
+
+    .info-box {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .form-box {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .info-box,
+    .form-box {
+        padding: 20px;
+    }
+
+    .info-box p {
+        font-size: 14px;
+    }
+
+    .input-box input {
+        padding: 8px;
+    }
+
+    button[type="submit"],
+    .info-box button {
+        padding: 8px 16px;
+    }
+}
